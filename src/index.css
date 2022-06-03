@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+:root {
+  --primary-color: #f06292;
+  --light-color: #ff94c2;
+  --dark-color: #ba2d65;
+  --dark-black: black;
+  --light-white: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+}
+
+body {
+  font-family: "Work+Sans";
+}
+
+.main-container {
+  width: 100% !important;
+  height: 80vh !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.top-navbar-icon,
+.top-navbar-login-btn {
+  cursor: pointer;
+  color: var(--light-white);
+  text-decoration: none;
+}
+
+.navbar-bottom {
+  position: fixed !important;
+  width: 100% !important;
+  height: 10vh !important;
+  bottom: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiBottomNavigation-root.css-16lloyr-MuiBottomNavigation-root {
+  width: 100%;
+}
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+  color: var(--light-color) !important;
 }
